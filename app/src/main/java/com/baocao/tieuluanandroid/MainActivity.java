@@ -57,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
         Log.i("rest", "1");
     }
 
+    private void viet(){
+        Log.i("rest", "1");
+    }
+
     //control
     private Button btnClick;
     private Spinner spinner;
