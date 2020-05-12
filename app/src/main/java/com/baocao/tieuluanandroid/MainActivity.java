@@ -49,17 +49,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
     }
 
-    private void test(){
-        Log.i("rest", "1");
-    }
 
-    private void test2(){
-        Log.i("rest", "2");
-    }
-
-    private void byTruong(){
-        Log.i("truong", "2");
-    }
 
     //control
     private Button btnClick;
