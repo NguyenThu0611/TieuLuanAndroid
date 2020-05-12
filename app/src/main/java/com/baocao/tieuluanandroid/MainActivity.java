@@ -56,4 +56,8 @@ public class MainActivity extends AppCompatActivity {
     //control
     private Button btnClick;
     private Spinner spinner;
+
+    private void Thu(){
+        Toast.makeText(this, "Thu", Toast.LENGTH_SHORT).show();
+    }
 }
