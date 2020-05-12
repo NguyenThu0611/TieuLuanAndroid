@@ -77,4 +77,9 @@ public class MainActivity extends AppCompatActivity {
     private int test1;
 
     private int test2;
+    
+    //truong
+    private void truongHam(){
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+    }
 }
