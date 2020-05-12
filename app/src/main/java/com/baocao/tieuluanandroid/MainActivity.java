@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void viet1(){
+
+        Toast.makeText(this, "123", Toast.LENGTH_SHORT).show();
+    }
+
+    private void viet2(){
+
         Toast.makeText(this, "123", Toast.LENGTH_SHORT).show();
     }
 
