@@ -23,37 +23,7 @@ public class MainActivity extends AppCompatActivity {
         init();
     }
 
-    private void init(){
-        btnClick = findViewById(R.id.btnClick);
-        spinner = findViewById(R.id.spinner);
+    private void init() {
 
-        btnClick.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
-                Toast.makeText(MainActivity.this, "Ok Vu Truong", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        //nap du lieu cho spinner;
-        List<String> list = new ArrayList<>();
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
-        list.add("5");
-        list.add("6");
-        list.add("7");
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, list);
-        adapter.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
-        spinner.setAdapter(adapter);
     }
-
-    private void viet(){
-        Toast.makeText(this, "123", Toast.LENGTH_SHORT).show();
-    }
-
-    //control
-    private Button btnClick;
-    private Spinner spinner;
 }
