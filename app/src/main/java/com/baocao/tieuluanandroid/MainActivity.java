@@ -76,4 +76,5 @@ public class MainActivity extends AppCompatActivity {
     }
     private int test1;
 
+    private int test2;
 }
