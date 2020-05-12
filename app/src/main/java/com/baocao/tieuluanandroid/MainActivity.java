@@ -46,12 +46,9 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, list);
         adapter.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
         spinner.setAdapter(adapter);
-
-        Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
     }
 
     //control
     private Button btnClick;
     private Spinner spinner;
-    private int f = 0;
 }
