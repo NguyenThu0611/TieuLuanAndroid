@@ -3,6 +3,7 @@ package com.baocao.tieuluanandroid;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -50,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
         Toast.makeText(this, "hihi", Toast.LENGTH_SHORT).show();
         list.add("9");
+    }
+
+    private void test(){
+        Log.i("rest", "1");
     }
 
     //control
