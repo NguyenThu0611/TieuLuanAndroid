@@ -53,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "123", Toast.LENGTH_SHORT).show();
     }
 
+    private void viet1(){
+        Toast.makeText(this, "123", Toast.LENGTH_SHORT).show();
+    }
+
     //control
     private Button btnClick;
     private Spinner spinner;
