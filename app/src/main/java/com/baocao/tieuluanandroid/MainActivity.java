@@ -29,4 +29,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private Button btnClick;
+    private int f;
 }
