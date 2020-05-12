@@ -43,10 +43,13 @@ public class MainActivity extends AppCompatActivity {
         list.add("5");
         list.add("6");
         list.add("7");
+        list.add("8");
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, list);
         adapter.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
         spinner.setAdapter(adapter);
         Toast.makeText(this, "hihi", Toast.LENGTH_SHORT).show();
+        list.add("9");
     }
 
     //control
