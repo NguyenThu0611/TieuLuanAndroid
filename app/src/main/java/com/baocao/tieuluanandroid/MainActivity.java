@@ -70,4 +70,8 @@ public class MainActivity extends AppCompatActivity {
     private void Thu(){
         Toast.makeText(this, "Thu", Toast.LENGTH_SHORT).show();
     }
+
+    private void Thu1(){
+        Toast.makeText(this, "Thu", Toast.LENGTH_SHORT).show();
+    }
 }
