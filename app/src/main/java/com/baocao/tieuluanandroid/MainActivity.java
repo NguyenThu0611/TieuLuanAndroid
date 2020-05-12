@@ -57,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
         Log.i("rest", "2");
     }
 
+    private void byTruong(){
+        Log.i("truong", "2");
+    }
+
     //control
     private Button btnClick;
     private Spinner spinner;
