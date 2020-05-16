@@ -7,9 +7,9 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="84dp"
+        android:layout_height="77dp"
         android:layout_marginStart="17dp"
         android:layout_marginLeft="17dp"
         android:layout_marginTop="17dp"
@@ -31,7 +31,7 @@
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -42,6 +42,6 @@
         android:layout_marginLeft="21dp"
         android:layout_marginTop="17dp"
         android:text="Tuoi:"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
         app:layout_constraintTop_toBottomOf="@+id/tvTenItemListView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

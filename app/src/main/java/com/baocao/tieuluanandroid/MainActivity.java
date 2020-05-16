@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.baocao.tieuluanandroid.tonghop.TongHopActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
         //btn customListView
         Button btncuslistView = findViewById(R.id.btnCustomListView);
         btncuslistView.setOnClickListener(btncuslistViewClicked);
+
+        //btn Tonghop
+        Button btnTongHop = findViewById(R.id.btnTongHop);
+        btnTongHop.setOnClickListener(btnTongHopClicked);
     }
 
     //su kien cho spinner
@@ -88,6 +94,15 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this, CustomListViewActivity.class);
+            startActivity(intent);
+        }
+    };
+
+    //su kien cho btnTongHop
+    private View.OnClickListener btnTongHopClicked = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, TongHopActivity.class);
             startActivity(intent);
         }
     };
