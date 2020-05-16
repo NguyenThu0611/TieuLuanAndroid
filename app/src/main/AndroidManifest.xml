@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProcessbarActivity"></activity>
+        <activity android:name=".GridViewActivity"></activity>
+        <activity android:name=".ProcessbarActivity" />
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

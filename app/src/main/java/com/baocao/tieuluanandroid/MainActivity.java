@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         //btn processbar
         Button btnProcessbar = findViewById(R.id.btnProcessBar);
         btnProcessbar.setOnClickListener(btnProcessbarClicked);
+
+        //btn gridView
+        Button btnGridView = findViewById(R.id.btnGridView);
+        btnGridView.setOnClickListener(btnGridViewClicked);
     }
 
     //su kien cho spinner
@@ -49,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this, ProcessbarActivity.class);
+            startActivity(intent);
+        }
+    };
+
+    //su kien cho gridView
+    private View.OnClickListener btnGridViewClicked = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, GridViewActivity.class);
             startActivity(intent);
         }
     };
