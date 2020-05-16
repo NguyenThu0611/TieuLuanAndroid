@@ -37,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
         //btn gridView
         Button btnGridView = findViewById(R.id.btnGridView);
         btnGridView.setOnClickListener(btnGridViewClicked);
+
+        //btn listView
+        Button btnlistView = findViewById(R.id.btnListView);
+        btnlistView.setOnClickListener(btnlistViewClicked);
+
+        //btn customListView
+        Button btncuslistView = findViewById(R.id.btnCustomListView);
+        btncuslistView.setOnClickListener(btncuslistViewClicked);
     }
 
     //su kien cho spinner
@@ -62,6 +70,24 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this, GridViewActivity.class);
+            startActivity(intent);
+        }
+    };
+
+    //su kien cho listView
+    private View.OnClickListener btnlistViewClicked = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+            startActivity(intent);
+        }
+    };
+
+    //su kien cho cuslistView
+    private View.OnClickListener btncuslistViewClicked = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, CustomListViewActivity.class);
             startActivity(intent);
         }
     };
