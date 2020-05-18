@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.baocao.tieuluanandroid.DTO.Lop;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -28,11 +30,16 @@ public class ListViewActivity extends AppCompatActivity {
     private void init(){
         listView = findViewById(R.id.listViewNormal);
 
-        final List<String> list = new ArrayList<String>(Arrays.asList("0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z".split(",")));
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
-        listView.setAdapter(arrayAdapter);
+        //Tao Adapter cho listview
+        final List<Lop> list = new ArrayList<>();
+        list.add(new Lop(1, "08DHTH1"));
+        list.add(new Lop(2, "08DHTH2"));
+        list.add(new Lop(3, "08DHTH3"));
+        list.add(new Lop(4, "08DHTH4"));
+        list.add(new Lop(5, "08DHTH5"));
 
-        listView.setDividerHeight(20);
+        ArrayAdapter<Lop> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
+        listView.setAdapter(arrayAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
