@@ -30,7 +30,9 @@ public class SpinnerActivity extends AppCompatActivity {
         list.add(new TheLoai(2, "Truong"));
         list.add(new TheLoai(3, "Thu"));
 
-        ArrayAdapter<TheLoai> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, list);
+        ArrayAdapter<TheLoai> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_spinner_item,
+                list);
         adapter.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
         spinner.setAdapter(adapter);
 
